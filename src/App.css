@@ -1,6 +1,4 @@
-.App {
-  text-align: center;
-}
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +33,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* jack code from herein, boiler plate above */ 
+
+.tile {
+  width: 200px ;
+  height: 200px;
+  border-style: solid;
+  border-color: black;
+}
+
+.App {
+  margin: 20px;
+  display: grid;  
+  gap: 20px;
+}
+
+.gameboard {
+  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
