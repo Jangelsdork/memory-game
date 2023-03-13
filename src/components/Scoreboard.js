@@ -1,8 +1,8 @@
-export default function Scoreboard(){
-    return (
+export default function Scoreboard() {
+  return (
     <div>
-    <div>Score: </div>
-    <div>Best Score:</div>
-    </div>   
-    )
+      <div>Score: </div>
+      <div>Best Score:</div>
+    </div>
+  );
 }
