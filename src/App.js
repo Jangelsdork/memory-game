@@ -12,15 +12,15 @@ function App() {
     <div className="App">
       <Scoreboard />
       <div className='gameboard'>
-        <Tile color={color[1]}/> 
-        <Tile color={color[2]}/> 
-        <Tile color={color[3]}/> 
-        <Tile color={color[4]}/> 
-        <Tile color={color[5]}/> 
-        <Tile color={color[6]}/> 
-        <Tile color={color[7]}/> 
-        <Tile color={color[8]}/> 
-        <Tile color={color[0]}/> 
+        <Tile tileColor={color[1]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[2]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[3]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[4]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[5]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[6]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[7]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[8]} color={color} setColor={setColor}/> 
+        <Tile tileColor={color[0]} color={color} setColor={setColor}/> 
       </div>
     </div>
     
