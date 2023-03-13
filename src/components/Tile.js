@@ -19,7 +19,6 @@ function handleClick(e){
     let newTileColor = e.target.style.backgroundColor.toString();
     let newGameBoard = gameBoard.slice();
     setGameBoard(newGameBoard.concat(newTileColor));
-    console.log(gameBoard)
       
 }
 

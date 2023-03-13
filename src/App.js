@@ -15,30 +15,85 @@ function App() {
     "grey",
   ]);
 
-  const [gameBoard, setGameBoard] = useState([])
-  function gamePlay(){
-    let lastItem = gameBoard[gameBoard.length-1]
-    let stepBefore = gameBoard.slice(0,-1)
-    if(stepBefore.includes(lastItem)){
-      console.log("LOSE")
+  const [gameBoard, setGameBoard] = useState([]);
+  function gamePlay() {
+    let lastItem = gameBoard[gameBoard.length - 1];
+    let stepBefore = gameBoard.slice(0, -1);
+    if (stepBefore.includes(lastItem)) {
+    let gameReset = []
+    setGameBoard([])
     }
   }
 
-  gamePlay()
+  gamePlay();
 
   return (
     <div className="App">
       <Scoreboard gameBoard={gameBoard} />
       <div className="gameboard">
-        <Tile tileColor={color[1]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard} />
-        <Tile tileColor={color[2]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[3]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[4]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[5]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[6]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[7]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[8]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
-        <Tile tileColor={color[0]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
+        <Tile
+          tileColor={color[1]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[2]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[3]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[4]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[5]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[6]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[7]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[8]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
+        <Tile
+          tileColor={color[0]}
+          color={color}
+          setColor={setColor}
+          gameBoard={gameBoard}
+          setGameBoard={setGameBoard}
+        />
       </div>
     </div>
   );
