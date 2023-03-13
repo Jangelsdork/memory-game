@@ -16,16 +16,15 @@ function App() {
   ]);
 
   const [gameBoard, setGameBoard] = useState([]);
-  function gamePlay() {
+
+  (function gamePlay() {
     let lastItem = gameBoard[gameBoard.length - 1];
     let stepBefore = gameBoard.slice(0, -1);
     if (stepBefore.includes(lastItem)) {
-    let gameReset = []
-    setGameBoard([])
+      let gameReset = [];
+      setGameBoard(gameReset);
     }
-  }
-
-  gamePlay();
+  })();
 
   return (
     <div className="App">
