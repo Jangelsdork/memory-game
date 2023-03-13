@@ -16,7 +16,6 @@ function handleClick(e){
     setColor(newColors);
    
     //add color value to gameboard array 
-    console.log(gameBoard.length)
     let newTileColor = e.target.style.backgroundColor.toString();
     let newGameBoard = gameBoard.slice();
     setGameBoard(newGameBoard.concat(newTileColor));

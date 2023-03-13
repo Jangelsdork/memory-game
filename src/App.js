@@ -15,12 +15,20 @@ function App() {
     "grey",
   ]);
 
-  const [gameBoard, setGameBoard] = useState(["red"])
+  const [gameBoard, setGameBoard] = useState([])
+  function gamePlay(){
+    let lastItem = gameBoard[gameBoard.length-1]
+    let stepBefore = gameBoard.slice(0,-1)
+    if(stepBefore.includes(lastItem)){
+      console.log("LOSE")
+    }
+  }
 
+  gamePlay()
 
   return (
     <div className="App">
-      <Scoreboard />
+      <Scoreboard gameBoard={gameBoard} />
       <div className="gameboard">
         <Tile tileColor={color[1]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard} />
         <Tile tileColor={color[2]} color={color} setColor={setColor} gameBoard={gameBoard} setGameBoard={setGameBoard}/>
